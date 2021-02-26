@@ -24,7 +24,7 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh 'java -jar C:/Users/jt653669/Box/Jenkins-Server/workspace/Maven-2-Pipeline*.jar'
+                sh 'java -jar C:/Users/jt653669/Box/Jenkins-Server/workspace/Maven-2-Pipeline/*.jar'
             }
         }
             
