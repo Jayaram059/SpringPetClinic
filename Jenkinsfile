@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/anjucoursera1/SpringPetClinic.git'
+                git branch: 'main', url: 'https://github.com/Jayaram059/SpringPetClinic.git'
             }
         }
         stage('Build'){
@@ -24,10 +24,10 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh 'java -jar /var/lib/jenkins/workspace/PetClinicDeclarativePipeline/target/*.jar'
+                sh 'java -jar C:/Users/jt653669/Box/Jenkins-Server/workspace/Maven-2-Pipeline*.jar'
             }
         }
             
-        
+      
     }
 }
